@@ -1,4 +1,5 @@
 <% if article.password.nil? or article.password.blank? %>
+  Password IS: <%= article.password %>
   <%= render 'articles/article_content', { :article => article } %>
 <% else %>
   <%= render 'articles/password_form', { :article => article } %>
