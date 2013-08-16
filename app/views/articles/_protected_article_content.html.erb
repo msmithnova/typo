@@ -5,6 +5,7 @@
 <% else %>
   Password IS: <%= article.password %>
   Password CLASS is: <%= article.password.class %>
+  Password EMPTY?: <%= article.password.empty? %>
   <%= render 'articles/password_form', { :article => article } %>
 <% end %>
 
