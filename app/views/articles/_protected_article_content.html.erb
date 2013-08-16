@@ -1,7 +1,10 @@
 <% if article.password.nil? or article.password.blank? %>
   Password IS: <%= article.password %>
+  Password CLASS is: <%= article.password.class %>
   <%= render 'articles/article_content', { :article => article } %>
 <% else %>
+  Password IS: <%= article.password %>
+  Password CLASS is: <%= article.password.class %>
   <%= render 'articles/password_form', { :article => article } %>
 <% end %>
 
